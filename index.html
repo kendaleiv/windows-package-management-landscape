@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title></title>
+    <title>All About the Packaging: Navigating the Windows 10 Package Management Landscape</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="All About the Packaging: Navigating the Windows 10 Package Management Landscape">
+    <meta name="author" content="Ken Dale">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -40,6 +40,150 @@
 
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
+
+        <section>
+          <p>All About the Packaging:<br />Navigating the Windows 10<br />Package Management Landscape</p>
+          <br />
+          <p><a href="http://kendaleiv.com">Ken Dale</a> / <a href="http://twitter.com/kendaleiv">@kendaleiv</a></p>
+        </section>
+
+        <section>
+          <h2>Packaging?</h2>
+          <a href="https://www.google.com/?gws_rd=ssl#q=define:packaging">https://www.google.com/?gws_rd=ssl#q=define:packaging</a>
+        </section>
+
+        <section>
+          <h2>State of packaging</h2>
+          <small>(number of unique packages)</small>
+          <br />
+          <br />
+          <br />
+          <p>
+            <strong>NuGet packages:</strong> More than 45k<br />
+            <strong>npm packages:</strong> More than 205k<br />
+            <strong>RubyGems:</strong> More than 110k<br />
+            <strong>Chocolatey packages:</strong> Approaching 3k
+          </p>
+        </section>
+
+        <section>
+          <h2>We like packaging</h2>
+          <br />
+          <p>and, it's not just a single platform / ecosystem</p>
+        </section>
+
+        <section>
+          <p>Quick (Windows) review:</p>
+          <h2>NuGet</h2>
+        </section>
+
+        <section>
+          <p>(You may have heard of) Chocolatey</p>
+        </section>
+
+        <section>
+          <h2>Chocolatey is amazing</h2>
+          <br />
+          <p>Software install packaging. On Windows. Yay!</p>
+        </section>
+
+        <section>
+          <p>But, that's another talk...</p>
+        </section>
+
+        <section>
+          <p>PackageManagement (aka OneGet)</p>
+          <p>Twitter: <a href="https://twitter.com/PSOneGet">@PSOneGet</a>
+        </section>
+
+        <section>
+          <p>What PackageManagement is not</p>
+          <br />
+          <br />
+          <small><a href="http://blogs.msdn.com/b/garretts/archive/2015/05/05/10-things-about-oneget-that-are-completely-different-than-you-think.aspx">http://blogs.msdn.com/b/garretts/archive/2015/05/05/10-things-about-oneget-that-are-completely-different-than-you-think.aspx</a></small>
+        </section>
+
+        <section>
+          <p>OK, so, what is it?</p>
+          <br />
+          <br />
+          <small><a href="https://github.com/OneGet/oneget#what-is-oneget">https://github.com/OneGet/oneget#what-is-oneget</a></small>
+        </section>
+
+        <section>
+          <p>Package manager manager</p>
+          <br />
+          <p>Yup.</p>
+        </section>
+
+        <section>
+          <p>Unified abstraction layer</p>
+          <br />
+          <br />
+          <small>Sounds fancy, right?</small>
+        </section>
+
+        <section>
+          <p>"OneGet delegates all installation operations to the installed package provider plugins."</p>
+          <small><a href="http://blogs.technet.com/b/packagemanagement/archive/2015/05/05/10-things-about-oneget-that-are-completely-different-than-you-think.aspx">http://blogs.technet.com/b/packagemanagement/archive/2015/05/05/10-things-about-oneget-that-are-completely-different-than-you-think.aspx</a></small>
+        </section>
+
+        <section>
+          <p>Heeeeeey PowerShell,</p>
+          <p>how do I <s>OneGet</s> <strong>PackageManagement</strong>?</p>
+          <br />
+          <pre><code data-trim>
+            PS:\> Get-Command -Module PackageManagement
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Core concepts</h2>
+        </section>
+
+        <section>
+          <p>Package providers</p>
+          <br />
+          <pre><code data-trim>
+            PS:\> Get-PackageProvider
+          </code></pre>
+        </section>
+
+        <section>
+          <p>Package sources</p>
+          <br />
+          <pre><code data-trim>
+            PS:\> Get-PackageSource
+
+... etc
+          </code></pre>
+        </section>
+
+        <section>
+          <p>Working with packages</p>
+        </section>
+
+        <section>
+          <p>OK, I said Windows 10, but,<br />it's not purely just Windows 10...</p>
+          <br />
+          <br />
+          <small>Still friends?</small>
+        </section>
+
+        <section>
+          <p>Get involved (if you want)!</p>
+          <small><a href="https://github.com/OneGet/oneget#participating-in-the-oneget-community">https://github.com/OneGet/oneget#participating-in-the-oneget-community</a></small>
+        </section>
+
+        <section>
+          <a href="https://github.com/OneGet/oneget">https://github.com/OneGet/oneget</a><br />
+          <br />
+          <br />
+          <br />
+          <h2>Questions?</h2>
+          <p><a href="http://kendaleiv.com">Ken Dale</a> / <a href="http://twitter.com/kendaleiv">@kendaleiv</a></p>
+        </section>
+
       </div>
 
     </div>
